@@ -200,7 +200,6 @@ body {
         position: relative;
         @include sp {
             margin-top: 70px;
-
         }
 
         &__header {
@@ -327,14 +326,24 @@ body {
             position: relative;
             margin-top: 58px;
             width: 100%;
+            @include sp {
+                margin-top: 178px;
+            }
 
             .model-room__main {
                 position: relative;
                 z-index: 10;
                 display: flex;
+                @include sp {
+                    display: block;
+                    padding-top: 120px;
+                }
 
                 .model-room__list {
                     width: 50%;
+                    @include sp {
+                        width: 100%;
+                    }
 
                     .model-room__item {
                         display: flex;
@@ -348,6 +357,10 @@ body {
                         margin-right: 11px;
                         padding: 60px 0 49px 0;
                         border-bottom: 2px solid #5B5657;
+                        @include sp {
+                            padding: 25px 0 40px 0;
+                            margin-right: 0;
+                        }
 
                         &:last-child {
                             border-bottom: none;
@@ -361,6 +374,9 @@ body {
                                 font-weight: 400;
                                 line-height: 100%; /* 80px */
                                 color: #464041;
+                                @include sp {
+                                    font-size: 40px;
+                                }
                             }
 
                             &--sub-title {
@@ -371,11 +387,18 @@ body {
                                 font-style: normal;
                                 font-weight: 500;
                                 line-height: 100%; /* 24px */
+                                @include sp {
+                                    font-size: 14px;
+                                    margin-top: 5px;
+                                }
                             }
                         }
 
                         &__btn {
                             margin-top: 80px;
+                            @include sp {
+                                margin-top: 30px;
+                            }
 
                             a {
                                 color: #464041;
@@ -387,6 +410,15 @@ body {
                                 font-weight: 400;
                                 line-height: normal;
                                 text-decoration: none;
+                                @include sp {
+                                    font-size: 18px;
+                                }
+
+                                img {
+                                    @include sp {
+                                        width: 15px;
+                                    }
+                                }
                             }
                         }
 
@@ -394,11 +426,18 @@ body {
                             position: absolute;
                             top: 116px;
                             right: 39px;
+                            @include sp {
+                                top: 3px;
+                                right: 12px;
+                            }
 
                             img {
                                 width: 120px;
                                 height: auto;
                                 display: block;
+                                @include sp {
+                                    width: 110px;
+                                }
                             }
                         }
                     }
@@ -407,13 +446,34 @@ body {
                 .model-room__image {
                     width: 50%;
                     position: relative;
+                    @include sp {
+                        width: 100%;
+                        position: absolute;
+                        top: -120px;
+                    }
 
-                    img {
+                    img.model-pc {
                         top: -210px;
                         position: absolute;
                         width: calc(100% - 11px);
                         height: auto;
                         display: block;
+                    }
+
+                    img.model-mb {
+                        display: none;
+                    }
+
+                    @include sp {
+                        img.model-pc {
+                            display: none;
+                        }
+
+                        img.model-mb {
+                            display: block;
+                            width: 408px;
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -427,6 +487,9 @@ body {
                 width: 100%;
                 height: 757px;
                 background-color: #F4F0F0;
+                @include sp {
+                    height: 500px;
+                }
             }
 
         }
@@ -520,7 +583,6 @@ body {
             }
 
             &--text {
-                width: 50%;
                 font-family: $font-family-sans-serif-source;
                 font-size: 21px;
                 font-style: normal;

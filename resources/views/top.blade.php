@@ -96,7 +96,8 @@
                     </div>
                 </div>
                 <div class="model-room__image">
-                    <img src="{{ asset('images/model-room.png') }}" alt="model-room">
+                    <img class="model-pc" src="{{ asset('images/model-room.png') }}" alt="model-room">
+                    <img class="model-mb" src="{{ asset('images/model-room-mb.png') }}" alt="model-room">
                 </div>
             </div>
         </div>
