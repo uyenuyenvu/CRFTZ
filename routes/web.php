@@ -15,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('top');
-});
+})->name('top');
+Route::get('/company', function () {
+    return view('company');
+})->name('company');
