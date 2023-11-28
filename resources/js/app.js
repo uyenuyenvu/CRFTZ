@@ -16,4 +16,5 @@ $('.item-btn').click(function () {
 $('.twoLineMenuMB').click(function (){
     $(this).toggleClass('show')
     $('.menu-detail-mb').toggleClass('show')
+    $('.header-wrap').toggleClass('show-menu-mobile')
 })

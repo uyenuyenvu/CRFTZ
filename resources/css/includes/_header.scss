@@ -7,6 +7,9 @@
     @include sp {
         height: 85px;
         margin-bottom: 50px;
+      &.show-menu-mobile{
+        position: fixed;
+      }
     }
     .menu{
       width: 100%;
@@ -178,7 +181,7 @@
     padding-bottom: 20px;
     @include sp {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 125px;
     }
     .line{
         position: relative;
@@ -246,6 +249,7 @@
             }
             .item-menu-left-bottom{
                 display: flex;
+              text-decoration: none;
                 align-items: center;
                 span{
                     font-size: 28px;
