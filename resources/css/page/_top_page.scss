@@ -6,9 +6,41 @@
         //margin-top: 50px;
 
         .top--line {
-            width: 100%;
             height: 1px;
             background-color: white;
+            position: relative;
+            width: calc(100% + 5px);
+            transform: translateX(-3px);
+
+            hr {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+
+            .dots {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-2px) translateX(0px);
+
+                .item-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+
+                    &.mb-hide {
+                        @include sp {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
         }
 
         .top--content {
@@ -66,6 +98,11 @@
             @include sp {
                 font-size: 40px;
                 margin-left: 150px;
+            }
+
+            @include sp-xs {
+                font-size: 40px;
+                margin-left: 100px;
             }
         }
     }
@@ -229,9 +266,41 @@
         //margin-top: 50px;
 
         .top--line {
-            width: 100%;
             height: 1px;
             background-color: white;
+            position: relative;
+            width: calc(100% + 5px);
+            transform: translateX(-3px);
+
+            hr {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+
+            .dots {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-2px) translateX(0px);
+
+                .item-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+
+                    &.mb-hide {
+                        @include sp {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
         }
 
         .top--content {
@@ -430,6 +499,15 @@
                         height: auto;
                     }
                 }
+
+
+                @include sp-xs {
+                    img.model-mb {
+                        display: block;
+                        width: 360px;
+                        height: auto;
+                    }
+                }
             }
         }
 
@@ -457,10 +535,44 @@
     }
 
     &__top {
+        //margin-top: 50px;
+
         .top--line {
-            width: 100%;
             height: 1px;
             background-color: white;
+            position: relative;
+            width: calc(100% + 5px);
+            transform: translateX(-3px);
+
+            hr {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+
+            .dots {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-2px) translateX(0px);
+
+                .item-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+
+                    &.mb-hide {
+                        @include sp {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
         }
 
         .top--content {
@@ -562,10 +674,11 @@
     height: 90px;
     transform: rotate(90deg) translateY(-50%);
     @include sp {
-        border-bottom: 0;
         width: 100%;
         transform: none;
         right: 0;
+        top: unset;
+        bottom: 0;
     }
 
     a {
@@ -639,7 +752,8 @@
     flex-direction: column;
     justify-content: flex-end;
     width: max-content;
-    .title-slide{
+
+    .title-slide {
         font-size: 190px;
         line-height: 190px;
         @include sp {
@@ -647,7 +761,8 @@
             line-height: 65px;
         }
     }
-    img{
+
+    img {
         width: 900px;
         @include sp {
             width: 300px;
@@ -656,8 +771,9 @@
         }
 
 
-        }
+    }
 }
-.swiper-wrapper{
-  align-items: flex-end;
+
+.swiper-wrapper {
+    align-items: flex-end;
 }

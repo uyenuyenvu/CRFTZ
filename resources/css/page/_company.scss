@@ -90,6 +90,13 @@
                     width: 350px;
                     margin-left: 60px;
                 }
+
+                @include sp-xs {
+                    margin-top: 50px;
+                    display: block;
+                    width: 310px;
+                    margin-left: 60px;
+                }
             }
         }
 
@@ -168,6 +175,8 @@
                     @include sp {
                         font-size: 14px;
                     }
+
+
                 }
             }
         }
@@ -219,6 +228,11 @@
                     @include sp {
                         width: 200px;
                         height: 200px;
+                    }
+
+                    @include sp-xs {
+                        width: 182px;
+                        height: 182px;;
                     }
 
                     img.thumb {

@@ -24,6 +24,10 @@
         slidesPerView: "auto",
         spaceBetween: 30,
     });
+    // $('.twoLineMenuMB').click(function (){
+    //     $(this).addClass('show')
+    // })
+
 </script>
 </body>
 </html>

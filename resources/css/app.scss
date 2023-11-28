@@ -23,7 +23,14 @@ body {
     margin: 0 auto;
 
     @include sp {
-        max-width: 428px;
+        max-width: 420px;
+        padding: 0 5px;
+
+    }
+
+    @include sp-xs {
+        max-width: 375px;
+        padding: 0;
     }
 }
 
@@ -50,6 +57,11 @@ body {
         @include sp {
             width: 411px;
             --g: 205px; /* gap */
+        }
+
+        @include sp-xs {
+            width: 375px;
+            --g: 187px; /* gap */
         }
     }
 

@@ -12,3 +12,8 @@ $('.item-btn').click(function () {
         $('#'+id).addClass('show');
     }
 })
+
+$('.twoLineMenuMB').click(function (){
+    $(this).toggleClass('show')
+    $('.menu-detail-mb').toggleClass('show')
+})

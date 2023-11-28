@@ -43,7 +43,16 @@
     </section>
     <section class="who-we-are site">
         <div class="who-we-are__top">
-            <div class="top--line"></div>
+            <div class="top--line">
+                <hr>
+                <div class="dots">
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot mb-hide"></div>
+                    <div class="item-dot mb-hide"></div>
+                </div>
+            </div>
             <div class="top--content">
                 <div class="top--content__text">Who</div>
                 <div class="top--content__text">We</div>
@@ -86,7 +95,16 @@
     </section>
     <section class="model-room">
         <div class="model-room__top site">
-            <div class="top--line"></div>
+            <div class="top--line">
+                <hr>
+                <div class="dots">
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot mb-hide"></div>
+                    <div class="item-dot mb-hide"></div>
+                </div>
+            </div>
             <div class="top--content">
                 <div class="top--content__text">Model</div>
                 <div class="top--content__text">Room</div>
@@ -145,7 +163,16 @@
     </section>
     <section class="faq site">
         <div class="faq__top">
-            <div class="top--line"></div>
+            <div class="top--line">
+                <hr>
+                <div class="dots">
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot mb-hide"></div>
+                    <div class="item-dot mb-hide"></div>
+                </div>
+            </div>
             <div class="top--content">
                 <div class="top--content__text">FAQ</div>
                 <div class="top--content__text">FAQ</div>
