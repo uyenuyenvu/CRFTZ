@@ -8,8 +8,69 @@
 
 
 //Top Page
+body {
+    font-family: $font-family-sans-serif-source;
+    color: $white;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    background-color: $gray;
+}
+
+.site {
+    padding: 0 8px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include sp {
+        max-width: 420px;
+        padding: 0 5px;
+
+    }
+
+    @include sp-xs {
+        max-width: 375px;
+        padding: 0;
+    }
+}
+
+.page-wrapper {
+
+    height: 100%;
+    position: relative;
+
+    &::after {
+        --c: #6b6768; /* color */
+        --t: 1px; /* thickness */
+        --g: 356px; /* gap */
+        --d: 5px; /* control the dashes */
+
+        z-index: -1;
+        width: 1426px;
+        margin: 0 auto;
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        background: conic-gradient(at var(--t) 50%, #0000 75%, var(--c) 0) 0/var(--g) var(--d);
+
+        @include sp {
+            width: 411px;
+            --g: 205px; /* gap */
+        }
+
+        @include sp-xs {
+            width: 375px;
+            --g: 187px; /* gap */
+        }
+    }
+
+
+}
+
 @import "page/top_page";
 @import "page/support_page";
 @import "page/contact_page";
-
-
+@import "page/company";
+@import "page/design";
+@import "includes/header";

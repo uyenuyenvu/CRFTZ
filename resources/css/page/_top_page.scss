@@ -1,669 +1,780 @@
-body {
-    font-family: $font-family-sans-serif-source;
-    color: $white;
-    font-size: 18px;
-    line-height: 34px;
-    font-weight: 400;
-    background-color: $gray;
-}
 
-.site {
-    padding: 0 8px;
-    max-width: 1440px;
-    margin: 0 auto;
+.who-we-are {
+    width: 100%;
 
-    @include sp {
-        max-width: 428px;
-    }
-}
+    &__top {
+        //margin-top: 50px;
 
-.page-wrapper {
+        .top--line {
+            height: 1px;
+            background-color: white;
+            position: relative;
+            width: calc(100% + 5px);
+            transform: translateX(-3px);
 
-    height: 100%;
-    position: relative;
-
-    &::after {
-        --c: rgba(255, 255, 255, 0.5); /* color */
-        --t: 1px; /* thickness */
-        --g: 356px; /* gap */
-        --d: 5px; /* control the dashes */
-
-        z-index: -1;
-        width: 1426px;
-        margin: 0 auto;
-        content: "";
-        position: absolute;
-        inset: 0;
-        height: 100%;
-        background: conic-gradient(at var(--t) 50%, #0000 75%, var(--c) 0) 0/var(--g) var(--d);
-
-        @include sp {
-            width: 411px;
-            --g: 205px; /* gap */
-        }
-    }
-
-    .who-we-are {
-        width: 100%;
-
-        &__top {
-            //margin-top: 50px;
-
-            .top--line {
+            hr {
                 width: 100%;
-                height: 1px;
+                height: 2px;
                 background-color: white;
             }
 
-            .top--content {
-                margin-top: 12px;
+            .dots {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-                @include sp {
-                    margin-top: 7px;
-                }
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-2px) translateX(0px);
 
-                &__text {
-                    text-align: center;
-                    font-family: $font-family-sans-serif-helvetica;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    color: $white;
+                .item-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
 
-
-                    @include sp {
-                        font-size: 12px;
+                    &.mb-hide {
+                        @include sp {
+                            display: none !important;
+                        }
                     }
                 }
+
             }
         }
 
-        &__header {
-            margin-top: 140px;
-            @include sp {
-                margin-top: 40px;
-            }
-
-            &__sub-title {
-                font-family: $font-family-sans-serif-source;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%; /* 16px */
-                color: $gold;
-                @include sp {
-                    font-size: 11px;
-                }
-            }
-
-            &__title {
-                font-family: $font-family-sans-serif-owners;
-                font-size: 130px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 80%; /* 104px */
-                color: $white;
-                margin-left: 580px;
-                @include sp {
-                    font-size: 40px;
-                    margin-left: 150px;
-                }
-            }
-        }
-
-        &__content {
-            width: 100%;
-            margin-top: 70px;
+        .top--content {
+            margin-top: 12px;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             @include sp {
-                margin-top: 40px;
+                margin-top: 7px;
             }
 
-            .item {
-                width: 50%;
-                @include sp {
-                    &:first-child {
-                        width: 20%;
-                    }
-                    &:last-child {
-                        width: 80%;
-                    }
-
-                }
-
-                .who-we-are__content__title {
-                    font-family: $font-family-sans-serif-source;
-                    font-size: 55px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 130%; /* 71.5px */
-                    color: $gold;
-                    @include sp {
-                        font-size: 21px;
-                    }
-                }
-
-                .who-we-are__content__text {
-                    margin-top: 13px;
-                    font-family: $font-family-sans-serif-source;
-                    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-                    font-size: 21px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 180%; /* 37.8px */
-                    color: $white;
-
-                    @include sp {
-                        margin-top: 10px;
-                        font-size: 16px;
-                    }
-                }
-
-                .who-we-are__content__btn {
-                    margin-top: 40px;
-
-                    @include sp {
-                        margin-top: 30px;
-                    }
-
-                    a {
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 32px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                        color: white;
-                        font-family: $font-family-sans-serif-helvetica;
-
-                        @include sp {
-                            font-size: 18px;
-                        }
-
-                        img {
-                            @include sp {
-                                width: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-    .features-one {
-        margin-top: 131px;
-        position: relative;
-        @include sp {
-            margin-top: 70px;
-        }
-
-        &__header {
-            position: relative;
-            z-index: 2;
-
-            &__title {
-                font-family: $font-family-sans-serif-owners;
-                font-size: 270px;
+            &__text {
+                text-align: center;
+                font-family: $font-family-sans-serif-helvetica;
+                font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 80%;
-                color: white;
-                @include sp {
-                    font-size: 80px;
-                }
-            }
-
-            &__sub-title {
-                font-family: $font-family-sans-serif-source;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%; /* 16px */
-                color: $gold;
-                right: 183px;
-                top: 6px;
-                @include sp {
-                    display: none;
-                }
-            }
-        }
-
-        &__content {
-            position: absolute;
-            top: 749px;
-            width: 100%;
-            @include sp {
-                position: relative;
-                top: 0;
-            }
-
-            &--image {
-                position: absolute;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
-                }
-            }
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            height: 685px;
-            @include sp {
-                position: relative;
-                height: 250px;
-            }
-        }
-    }
-
-    .model-room {
-        margin-top: 196px;
-        @include sp {
-            margin-top: 83px;
-        }
-
-        &__top {
-            //margin-top: 50px;
-
-            .top--line {
-                width: 100%;
-                height: 1px;
-                background-color: white;
-            }
-
-            .top--content {
-                margin-top: 12px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                @include sp {
-                    margin-top: 7px;
-                }
-
-                &__text {
-                    text-align: center;
-                    font-family: $font-family-sans-serif-helvetica;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    color: $white;
+                line-height: normal;
+                color: $white;
 
 
-                    @include sp {
-                        font-size: 12px;
-                    }
-                }
-            }
-        }
-
-        &__header {
-            margin-top: 40px;
-
-            .header__text {
-                width: 50%;
-                font-family: $font-family-sans-serif-source;
-                font-size: 21px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 180%; /* 37.8px */
-                @include sp {
-                    width: 100%;
-                    font-size: 16px;
-                }
-            }
-        }
-
-        &__content {
-            position: relative;
-            margin-top: 58px;
-            width: 100%;
-            @include sp {
-                margin-top: 178px;
-            }
-
-            .model-room__main {
-                position: relative;
-                z-index: 10;
-                display: flex;
-                @include sp {
-                    display: block;
-                    padding-top: 120px;
-                }
-
-                .model-room__list {
-                    width: 50%;
-                    @include sp {
-                        width: 100%;
-                    }
-
-                    .model-room__item {
-                        display: flex;
-
-                        &--right {
-                            width: 50%;
-                        }
-                    }
-
-                    .item {
-                        margin-right: 11px;
-                        padding: 60px 0 49px 0;
-                        border-bottom: 2px solid #5B5657;
-                        @include sp {
-                            padding: 25px 0 40px 0;
-                            margin-right: 0;
-                        }
-
-                        &:last-child {
-                            border-bottom: none;
-                        }
-
-                        &__header {
-                            &--title {
-                                font-family: $font-family-sans-serif-owners;
-                                font-size: 80px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 100%; /* 80px */
-                                color: #464041;
-                                @include sp {
-                                    font-size: 40px;
-                                }
-                            }
-
-                            &--sub-title {
-                                margin-top: 10px;
-                                font-family: $font-family-sans-serif-source;
-                                color: #464041;
-                                font-size: 24px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: 100%; /* 24px */
-                                @include sp {
-                                    font-size: 14px;
-                                    margin-top: 5px;
-                                }
-                            }
-                        }
-
-                        &__btn {
-                            margin-top: 80px;
-                            @include sp {
-                                margin-top: 30px;
-                            }
-
-                            a {
-                                color: #464041;
-                                text-transform: uppercase;
-                                text-align: right;
-                                font-family: $font-family-sans-serif-helvetica;
-                                font-size: 32px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                                text-decoration: none;
-                                @include sp {
-                                    font-size: 18px;
-                                }
-
-                                img {
-                                    @include sp {
-                                        width: 15px;
-                                    }
-                                }
-                            }
-                        }
-
-                        &__image {
-                            position: absolute;
-                            top: 116px;
-                            right: 39px;
-                            @include sp {
-                                top: 3px;
-                                right: 12px;
-                            }
-
-                            img {
-                                width: 120px;
-                                height: auto;
-                                display: block;
-                                @include sp {
-                                    width: 110px;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .model-room__image {
-                    width: 50%;
-                    position: relative;
-                    @include sp {
-                        width: 100%;
-                        position: absolute;
-                        top: -120px;
-                    }
-
-                    img.model-pc {
-                        top: -210px;
-                        position: absolute;
-                        width: calc(100% - 11px);
-                        height: auto;
-                        display: block;
-                    }
-
-                    img.model-mb {
-                        display: none;
-                    }
-
-                    @include sp {
-                        img.model-pc {
-                            display: none;
-                        }
-
-                        img.model-mb {
-                            display: block;
-                            width: 408px;
-                            height: auto;
-                        }
-                    }
-                }
-            }
-
-            &::after {
-                top: 0;
-                z-index: -3;
-                position: absolute;
-                content: '';
-                display: block;
-                width: 100%;
-                height: 757px;
-                background-color: #F4F0F0;
-                @include sp {
-                    height: 500px;
-                }
-            }
-
-        }
-    }
-
-    .faq {
-        margin-top: 183px;
-        @include sp {
-            margin-top: 83px;
-        }
-
-        &__top {
-            .top--line {
-                width: 100%;
-                height: 1px;
-                background-color: white;
-            }
-
-            .top--content {
-                margin-top: 12px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                @include sp {
-                    margin-top: 7px;
-                }
-
-                &__text {
-                    text-align: center;
-                    font-family: $font-family-sans-serif-helvetica;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    color: $white;
-
-
-                    @include sp {
-                        font-size: 12px;
-                    }
-                }
-            }
-        }
-
-        &__list {
-            margin-top: 131px;
-            @include sp {
-                margin-top: 40px;
-            }
-        }
-
-        &__item {
-            padding-bottom: 50px;
-            padding-top: 50px;
-            border-bottom: 1px solid #8B8888;
-            @include sp {
-                padding-bottom: 25px;
-                padding-top: 25px;
-            }
-
-            &--btn {
-
-
-                a {
-                    text-decoration: none;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    .btn-text {
-                        color: var(--WHITE, #FFF);
-                        font-family: $font-family-sans-serif-source;
-                        font-size: 47px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 180%; /* 90px */
-                        @include sp {
-                            font-size: 16px;
-                        }
-                    }
-
-                    img {
-                        width: 45px;
-                        height: 45px;
-                        @include sp {
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-                }
-            }
-
-            &--text {
-                font-family: $font-family-sans-serif-source;
-                font-size: 21px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 180%;
                 @include sp {
                     font-size: 12px;
                 }
             }
         }
-
-
     }
 
-    .phone-contact {
-        z-index: 15;
-        position: fixed;
-        top: 50%;
-        right: -60px;
-
-        width: 300px;
-        height: 90px;
-        transform: rotate(90deg) translateY(-50%);
+    &__header {
+        margin-top: 140px;
         @include sp {
-            border-bottom: 0;
-            width: 100%;
-            transform: none;
-            right: 0;
+            margin-top: 40px;
         }
 
-        a {
-            padding: 21px 33px 21px 28px;
-            background-color: $gold;
-            width: 100%;
-            //height: 100%;
-            display: inline-flex;
-            text-decoration: none;
-            gap: 15px;
-            justify-content: center;
-            align-items: center;
+        &__sub-title {
+            font-family: $font-family-sans-serif-source;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 16px */
+            color: $gold;
+            @include sp {
+                font-size: 11px;
+            }
         }
 
-        &__content {
-            &--title {
+        &__title {
+            font-family: $font-family-sans-serif-owners;
+            font-size: 130px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 80%; /* 104px */
+            color: $white;
+            margin-left: 580px;
+            @include sp {
+                font-size: 40px;
+                margin-left: 150px;
+            }
+
+            @include sp-xs {
+                font-size: 40px;
+                margin-left: 100px;
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        margin-top: 70px;
+        display: flex;
+        @include sp {
+            margin-top: 40px;
+        }
+
+        .item {
+            width: 50%;
+            @include sp {
+                &:first-child {
+                    width: 20%;
+                }
+                &:last-child {
+                    width: 80%;
+                }
+
+            }
+
+            .who-we-are__content__title {
                 font-family: $font-family-sans-serif-source;
-                font-size: 21px;
+                font-size: 55px;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 100%; /* 21px */
-                color: #232323;
+                line-height: 130%; /* 71.5px */
+                color: $gold;
                 @include sp {
-                    font-size: 14px;
+                    font-size: 21px;
                 }
             }
 
-            &--number {
-                margin-top: 11px;
-                font-family: $font-family-sans-serif-owners;
-                font-size: 16px;
+            .who-we-are__content__text {
+                margin-top: 13px;
+                font-family: $font-family-sans-serif-source;
+                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                font-size: 21px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 100%; /* 21px */
-                color: #232323;
+                line-height: 180%; /* 37.8px */
+                color: $white;
+
                 @include sp {
-                    font-size: 26px;
                     margin-top: 10px;
+                    font-size: 16px;
+                }
+            }
+
+            .who-we-are__content__btn {
+                margin-top: 40px;
+
+                @include sp {
+                    margin-top: 30px;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: white;
+                    font-family: $font-family-sans-serif-helvetica;
+
+                    @include sp {
+                        font-size: 18px;
+                    }
+
+                    img {
+                        @include sp {
+                            width: 15px;
+                        }
+                    }
                 }
             }
         }
+    }
+}
 
-        &__icon {
-            width: 35px;
-            height: 35px;
+.features-one {
+    margin-top: 131px;
+    position: relative;
+    @include sp {
+        margin-top: 70px;
+    }
+
+    &__header {
+        position: relative;
+        z-index: 2;
+
+        &__title {
+            font-family: $font-family-sans-serif-owners;
+            font-size: 270px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 80%;
+            color: white;
+            @include sp {
+                font-size: 80px;
+            }
+        }
+
+        &__sub-title {
+            font-family: $font-family-sans-serif-source;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 16px */
+            color: $gold;
+            right: 183px;
+            top: 6px;
+            @include sp {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 749px;
+        width: 100%;
+        @include sp {
+            position: relative;
+            top: 0;
+        }
+
+        &--image {
+            position: absolute;
 
             img {
                 width: 100%;
-                height: 100%;
-
-                transform: rotate(-90deg);
-
+                height: auto;
+                display: block;
             }
         }
     }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 685px;
+        @include sp {
+            position: relative;
+            height: 250px;
+        }
+    }
+}
+
+.model-room {
+    margin-top: 196px;
+    @include sp {
+        margin-top: 83px;
+    }
+
+    &__top {
+        //margin-top: 50px;
+
+        .top--line {
+            height: 1px;
+            background-color: white;
+            position: relative;
+            width: calc(100% + 5px);
+            transform: translateX(-3px);
+
+            hr {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+
+            .dots {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-2px) translateX(0px);
+
+                .item-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+
+                    &.mb-hide {
+                        @include sp {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .top--content {
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include sp {
+                margin-top: 7px;
+            }
+
+            &__text {
+                text-align: center;
+                font-family: $font-family-sans-serif-helvetica;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: $white;
+
+
+                @include sp {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &__header {
+        margin-top: 40px;
+
+        .header__text {
+            width: 50%;
+            font-family: $font-family-sans-serif-source;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%; /* 37.8px */
+            @include sp {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        margin-top: 58px;
+        width: 100%;
+        @include sp {
+            margin-top: 178px;
+        }
+
+        .model-room__main {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            @include sp {
+                display: block;
+                padding-top: 120px;
+            }
+
+            .model-room__list {
+                width: 50%;
+                @include sp {
+                    width: 100%;
+                }
+
+                .model-room__item {
+                    display: flex;
+
+                    &--right {
+                        width: 50%;
+                    }
+                }
+
+                .item {
+                    margin-right: 11px;
+                    padding: 60px 0 49px 0;
+                    border-bottom: 2px solid #5B5657;
+                    @include sp {
+                        padding: 25px 0 40px 0;
+                        margin-right: 0;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &__header {
+                        &--title {
+                            font-family: $font-family-sans-serif-owners;
+                            font-size: 80px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 100%; /* 80px */
+                            color: #464041;
+                            @include sp {
+                                font-size: 40px;
+                            }
+                        }
+
+                        &--sub-title {
+                            margin-top: 10px;
+                            font-family: $font-family-sans-serif-source;
+                            color: #464041;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 100%; /* 24px */
+                            @include sp {
+                                font-size: 14px;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+
+                    &__btn {
+                        margin-top: 80px;
+                        @include sp {
+                            margin-top: 30px;
+                        }
+
+                        a {
+                            color: #464041;
+                            text-transform: uppercase;
+                            text-align: right;
+                            font-family: $font-family-sans-serif-helvetica;
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-decoration: none;
+                            @include sp {
+                                font-size: 18px;
+                            }
+
+                            img {
+                                @include sp {
+                                    width: 15px;
+                                }
+                            }
+                        }
+                    }
+
+                    &__image {
+                        position: absolute;
+                        top: 116px;
+                        right: 39px;
+                        @include sp {
+                            top: 3px;
+                            right: 12px;
+                        }
+
+                        img {
+                            width: 120px;
+                            height: auto;
+                            display: block;
+                            @include sp {
+                                width: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .model-room__image {
+                width: 50%;
+                position: relative;
+                @include sp {
+                    width: 100%;
+                    position: absolute;
+                    top: -120px;
+                }
+
+                img.model-pc {
+                    top: -210px;
+                    position: absolute;
+                    width: calc(100% - 11px);
+                    height: auto;
+                    display: block;
+                }
+
+                img.model-mb {
+                    display: none;
+                }
+
+                @include sp {
+                    img.model-pc {
+                        display: none;
+                    }
+
+                    img.model-mb {
+                        display: block;
+                        width: 408px;
+                        height: auto;
+                    }
+                }
+
+
+                @include sp-xs {
+                    img.model-mb {
+                        display: block;
+                        width: 360px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &::after {
+            top: 0;
+            z-index: -3;
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 757px;
+            background-color: #F4F0F0;
+            @include sp {
+                height: 500px;
+            }
+        }
+
+    }
+}
+
+.faq {
+    margin-top: 183px;
+    @include sp {
+        margin-top: 83px;
+    }
+
+    &__top {
+        //margin-top: 50px;
+
+        .top--line {
+            height: 1px;
+            background-color: white;
+            position: relative;
+            width: calc(100% + 5px);
+            transform: translateX(-3px);
+
+            hr {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+            }
+
+            .dots {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(-2px) translateX(0px);
+
+                .item-dot {
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+
+                    &.mb-hide {
+                        @include sp {
+                            display: none !important;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .top--content {
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include sp {
+                margin-top: 7px;
+            }
+
+            &__text {
+                text-align: center;
+                font-family: $font-family-sans-serif-helvetica;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: $white;
+
+
+                @include sp {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 131px;
+        @include sp {
+            margin-top: 40px;
+        }
+    }
+
+    &__item {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        border-bottom: 1px solid #8B8888;
+        @include sp {
+            padding-bottom: 25px;
+            padding-top: 25px;
+        }
+
+        &--btn {
+
+
+            a {
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .btn-text {
+                    color: var(--WHITE, #FFF);
+                    font-family: $font-family-sans-serif-source;
+                    font-size: 47px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 180%; /* 90px */
+                    @include sp {
+                        font-size: 16px;
+                    }
+                }
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                    @include sp {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        &--text {
+            font-family: $font-family-sans-serif-source;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%;
+            @include sp {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+}
+
+.phone-contact {
+    z-index: 15;
+    position: fixed;
+    top: 50%;
+    right: -60px;
+
+    width: 300px;
+    height: 90px;
+    transform: rotate(90deg) translateY(-50%);
+    @include sp {
+        width: 100%;
+        transform: none;
+        right: 0;
+        top: unset;
+        bottom: 0;
+    }
+
+    a {
+        padding: 21px 33px 21px 28px;
+        background-color: $gold;
+        width: 100%;
+        //height: 100%;
+        display: inline-flex;
+        text-decoration: none;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        &--title {
+            font-family: $font-family-sans-serif-source;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 21px */
+            color: #232323;
+            @include sp {
+                font-size: 14px;
+            }
+        }
+
+        &--number {
+            margin-top: 11px;
+            font-family: $font-family-sans-serif-owners;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 21px */
+            color: #232323;
+            @include sp {
+                font-size: 26px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__icon {
+        width: 35px;
+        height: 35px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            transform: rotate(-90deg);
+
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    padding-left: 20px;
+    transform: translateY(-85px);
+    @include sp {
+        margin-bottom: 40px;
+        padding-left: 10px;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: max-content;
+
+    .title-slide {
+        font-size: 190px;
+        line-height: 190px;
+        @include sp {
+            font-size: 65px;
+            line-height: 65px;
+        }
+    }
+
+    img {
+        width: 900px;
+        @include sp {
+            width: 300px;
+            height: 225px;
+            object-fit: cover;
+        }
+
+
+    }
+}
+
+.swiper-wrapper {
+    align-items: flex-end;
 }

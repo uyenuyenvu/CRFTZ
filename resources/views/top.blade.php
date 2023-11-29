@@ -1,8 +1,58 @@
 @extends('layouts.master')
 @section('content')
+    <section class="swiper mySwiper site">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title-slide">
+                    VINTAGE
+                </div>
+                <img src="{{ asset('images/slide/sl1.png') }}">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('images/slide/sl2.png') }}">
+                <div class="title-slide">
+                    TRADITIONAL
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title-slide">
+                    NATURAL
+                </div>
+                <img src="{{ asset('images/slide/sl3.png') }}">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('images/slide/sl4.png') }}">
+                <div class="title-slide">
+                    URBAN
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title-slide">
+                    RESORT
+                </div>
+                <img src="{{ asset('images/slide/sl5.png') }}">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('images/slide/sl6.png') }}">
+                <div class="title-slide">
+                    CONTEMPOLARY
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
     <section class="who-we-are site">
         <div class="who-we-are__top">
-            <div class="top--line"></div>
+            <div class="top--line">
+                <hr>
+                <div class="dots">
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot mb-hide"></div>
+                    <div class="item-dot mb-hide"></div>
+                </div>
+            </div>
             <div class="top--content">
                 <div class="top--content__text">Who</div>
                 <div class="top--content__text">We</div>
@@ -45,7 +95,16 @@
     </section>
     <section class="model-room">
         <div class="model-room__top site">
-            <div class="top--line"></div>
+            <div class="top--line">
+                <hr>
+                <div class="dots">
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot mb-hide"></div>
+                    <div class="item-dot mb-hide"></div>
+                </div>
+            </div>
             <div class="top--content">
                 <div class="top--content__text">Model</div>
                 <div class="top--content__text">Room</div>
@@ -104,7 +163,16 @@
     </section>
     <section class="faq site">
         <div class="faq__top">
-            <div class="top--line"></div>
+            <div class="top--line">
+                <hr>
+                <div class="dots">
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot"></div>
+                    <div class="item-dot mb-hide"></div>
+                    <div class="item-dot mb-hide"></div>
+                </div>
+            </div>
             <div class="top--content">
                 <div class="top--content__text">FAQ</div>
                 <div class="top--content__text">FAQ</div>
