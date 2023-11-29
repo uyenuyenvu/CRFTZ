@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/support', function () {
     return view('support');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
