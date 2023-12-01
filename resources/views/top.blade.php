@@ -1,45 +1,46 @@
 @extends('layouts.master')
 @section('content')
-    <section class="swiper mySwiper site">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="title-slide">
-                    VINTAGE
+    <section class="topSlide site">
+        <div class="mySwiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="title-slide">
+                        VINTAGE
+                    </div>
+                    <img src="{{ asset('images/slide/sl1.png') }}">
                 </div>
-                <img src="{{ asset('images/slide/sl1.png') }}">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/slide/sl2.png') }}">
-                <div class="title-slide">
-                    TRADITIONAL
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl2.png') }}">
+                    <div class="title-slide">
+                        TRADITIONAL
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="title-slide">
-                    NATURAL
+                <div class="swiper-slide">
+                    <div class="title-slide">
+                        NATURAL
+                    </div>
+                    <img src="{{ asset('images/slide/sl3.png') }}">
                 </div>
-                <img src="{{ asset('images/slide/sl3.png') }}">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/slide/sl4.png') }}">
-                <div class="title-slide">
-                    URBAN
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl4.png') }}">
+                    <div class="title-slide">
+                        URBAN
+                    </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="title-slide">
-                    RESORT
+                <div class="swiper-slide">
+                    <div class="title-slide">
+                        RESORT
+                    </div>
+                    <img src="{{ asset('images/slide/sl5.png') }}">
                 </div>
-                <img src="{{ asset('images/slide/sl5.png') }}">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/slide/sl6.png') }}">
-                <div class="title-slide">
-                    CONTEMPOLARY
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl6.png') }}">
+                    <div class="title-slide">
+                        CONTEMPOLARY
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
     </section>
     <section class="who-we-are site">
         <div class="who-we-are__top">

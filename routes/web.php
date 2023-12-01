@@ -23,7 +23,6 @@ Route::get('/company', function () {
 Route::get('/design', function () {
     return view('design');
 })->name('design');
-});
 Route::get('/support', function () {
     return view('support');
 });
