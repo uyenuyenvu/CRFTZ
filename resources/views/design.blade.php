@@ -62,5 +62,80 @@
         </div>
         <div class="small-text">（デザインスタイル）</div>
     </section>
-
+    <section class="designSlide site">
+        <div class="swiper" id="mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl0.png') }}">
+                    <div class="small-text">(01)</div>
+                    <div class="title-slide">
+                        MODERN
+                    </div>
+                    <div class="des-slide">
+                        白/黒/グレー/ベージュといったトレンドカラーを軸に洗練を感じる建材でまとめるデザインスタイル。一流アパレル店を彷彿とさせるトーンとテクスチャーを自由な光表現で装飾し実現。
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl1.png') }}">
+                    <div class="small-text">(02)</div>
+                    <div class="title-slide">
+                        VINTAGE
+                    </div>
+                    <div class="des-slide">
+                        木材など温かみのある材質を軸に年月の変化を荘厳なデザインで暮らしに取り入れるスタイル。 いつ帰ってきても変わらない安心感と落ち着きを、発展と共存させる細部までの色調演出や照明デザインを。
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl7.png') }}">
+                    <div class="small-text">(03)</div>
+                    <div class="title-slide">
+                        RESORT
+                    </div>
+                    <div class="des-slide">
+                        一足踏み入れると自分だけのオアシス。贅沢なリラックスを有機的なデザインでまとめたスタイル。 空間の贅沢な活用と解放を軸に、毎日のやすらぎを統一されたトーンと"自分専用の間取り"で実現。
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl2.png') }}">
+                    <div class="small-text">(04)</div>
+                    <div class="title-slide">
+                        TRADITIONAL
+                    </div>
+                    <div class="des-slide">
+                        伝統的なデザインを現代技術で再現する古今融合スタイル。落ち着きの中に遊び心を。 現代的な質感の建材とアンティークの融合で革新と伝統を実現。
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl3.png') }}">
+                    <div class="small-text">(05)</div>
+                    <div class="title-slide">
+                        NATURAL
+                    </div>
+                    <div class="des-slide">
+                        緑を取り入れた暮らしを。近代デザインの住宅空間をナチュラルテクスチャーのデザインで統一。 時間やシーンに合わせた自然光の活用から、暮らしやすいユニバーサルデザインで実現。
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl4.png') }}">
+                    <div class="small-text">(06)</div>
+                    <div class="title-slide">
+                        URBAN
+                    </div>
+                    <div class="des-slide">
+                        最新IOTと共存する都会の暮らしを、生活様式に合わせてまとめるスタイル。 最新の海外建材を用いた自由なカラーリングとオーダーメイド家具(カウンター/テーブルetc)でのデザイン表現で実現。
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('images/slide/sl6.png') }}">
+                    <div class="small-text">(07)</div>
+                    <div class="title-slide">
+                        CONTEMPOLARY
+                    </div>
+                    <div class="des-slide">
+                        デザインの取捨選択を行い、主題となるデザインテーマをミニアルに表現するスタイル。 自分だけの秘密基地を、自分ならではの好みと狙いでまとめ、オンリーワンの空間を。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

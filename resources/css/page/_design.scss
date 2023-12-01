@@ -124,6 +124,9 @@
 }
 .design-desciption{
     padding: 0 15% 200px 15%;
+    @include sp{
+        padding: 0 15% 50px 15%;
+    }
     .title-description{
         font-size: 55px;
         line-height: 65px;
@@ -145,10 +148,71 @@
     }
 }
 .style-block{
-    padding: 0 0 300px 0;
+    padding: 0 0 200px 0;
+    @include sp{
+        padding: 0 0 50px 0;
+    }
     .title-style{
         font-size: 90px;
         line-height: 90px;
         color: white;
+        @include sp{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
+.designSlide{
+    .swiper {
+        width: 100%;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+        padding-left: 20px;
+        @include sp {
+            margin-bottom: 40px;
+            padding-left: 10px;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: max-content;
+
+        .title-slide {
+            font-size: 83px;
+            line-height: 83px;
+            @include sp {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .des-slide{
+            font-size: 16px;
+            margin-top: 15px;
+            @include sp {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+        img {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+            @include sp {
+                width: 350px;
+                height: 260px;
+                object-fit: cover;
+            }
+
+
+        }
+    }
+
+    .swiper-wrapper {
+        align-items: stretch;
     }
 }

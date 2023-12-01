@@ -25,9 +25,25 @@
         slidesPerView: "auto",
         spaceBetween: 30,
     });
-    // $('.twoLineMenuMB').click(function (){
-    //     $(this).addClass('show')
-    // })
+
+    var swiper2 = new Swiper('#mySwiper', {
+        loop: true,
+        centeredSlides : true,
+        breakpoints: {
+            640: {
+                spaceBetween: 20,
+                slidesPerView: 1.25,
+            },
+            768: {
+                spaceBetween: 50,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 50,
+                slidesPerView: 2,
+            },
+        },
+    });
 
 </script>
 </body>
