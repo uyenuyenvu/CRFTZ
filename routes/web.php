@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('top');
 })->name('top');
+
 Route::get('/company', function () {
     return view('company');
 })->name('company');
@@ -28,4 +29,8 @@ Route::get('/support', function () {
 });
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/policy', function () {
+    return view('policy');
 });

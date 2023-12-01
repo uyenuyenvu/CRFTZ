@@ -65,32 +65,6 @@
             </div>
             <div class="send">SEND</div>
         </div>
-        <div class="contact-us" id="hidden-sp">
-            <div class="title">
-                <div class="sub-title">(お問い合わせ)</div>
-                <div class="contact-title">CONTACT US
-                    <div class="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="105" height="102" viewBox="0 0 105 102" fill="none">
-                                <rect x="78.4861" y="56.9551" width="75.9861" height="13.1816" transform="rotate(-180 78.4861 56.9551)" stroke="#5B5657"/>
-                                <rect x="102.591" y="61.1702" width="53.9137" height="13.1816" transform="rotate(135 102.591 61.1702)" stroke="#5B5657"/>
-                                <rect x="93.2664" y="50.1508" width="53.9137" height="13.1816" transform="rotate(-135 93.2664 50.1508)" stroke="#5B5657"/>
-                                <circle cx="2.5" cy="43.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="79.5" cy="43.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="64.5" cy="2.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="54.5" cy="11.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="102.5" cy="41.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="102.5" cy="60.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="64.5" cy="99.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="92.5" cy="50.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="54.5" cy="89.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="2.5" cy="57.5" r="2.5" fill="#5B5657"/>
-                                <circle cx="79.5" cy="57.5" r="2.5" fill="#5B5657"/>
-                            </svg>
-                        <div class="text">お気軽にお申し込みください</div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 @endsection
