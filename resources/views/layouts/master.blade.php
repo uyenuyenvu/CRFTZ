@@ -18,7 +18,6 @@
     @include('includes.footer')
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -46,5 +45,6 @@
     });
 
 </script>
+@yield('script_custom')
 </body>
 </html>

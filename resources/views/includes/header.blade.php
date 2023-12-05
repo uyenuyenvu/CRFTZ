@@ -4,21 +4,21 @@
             <a href="{{ route('top') }}"><img src="{{ asset('images/logo.svg') }}"></a>
         </div>
         <div class="item-menu">
-            <a href="">DESIGN</a>
+            <a  href="{{ route('design') }}">DESIGN</a>
         </div>
         <div class="item-menu">
             <a href="{{ route('company') }}">COMPANY</a>
         </div>
         <div class="item-menu">
-            <a href="">SUPPORT</a>
+            <a  href="{{ route('support') }}">SUPPORT</a>
         </div>
         <div class="item-menu">
-            <a href="">CONTACT</a>
+            <a  href="{{ route('contact') }}">CONTACT</a>
         </div>
     </div>
     <div class="menuMB site">
         <div class="logo">
-            <a href="#"><img src="{{ asset('images/logo.svg') }}"></a>
+            <a href="{{ route('top') }}"><img src="{{ asset('images/logo.svg') }}"></a>
         </div>
         <div class="iconMenu twoLineMenuMB">
             <div class="line"></div>
@@ -28,27 +28,27 @@
     <div class="menu-detail-mb">
         <div class="list-menu">
             <div class="item-menu">
-                <a href="" >
+                <a href="{{ route('top') }}" >
                     HOME
                 </a>
             </div>
             <div class="item-menu">
-                <a href="" >
+                <a href="{{ route('design') }}" >
                     DESIGN
                 </a>
             </div>
             <div class="item-menu">
-                <a href="" >
+                <a href="{{ route('company') }}" >
                     COMPANY
                 </a>
             </div>
             <div class="item-menu">
-                <a href="" >
+                <a href="{{ route('support') }}" >
                     SUPPORT
                 </a>
             </div>
             <div class="item-menu">
-                <a href="" >
+                <a href="{{ route('contact') }}" >
                     CONTACT
                 </a>
             </div>
@@ -62,7 +62,7 @@
                 <span>INSTAGRAM</span>
                 <img src="{{ asset('images/Union.svg') }}" alt="">
             </a>
-            <a href="" class="item-menu-bottom">
+            <a href={{ route('policy') }}"" class="item-menu-bottom">
                 <span>POLICY</span>
             </a>
         </div>
