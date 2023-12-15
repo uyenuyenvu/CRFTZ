@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <div class='support'>
+    <div class='support site'>
         <div class="support__header">
             <div class='support__header__title'>
                 <div class="title-sub">
