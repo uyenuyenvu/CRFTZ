@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <div class='policy'>
+    <div class='policy site'>
         <div class="policy__header">
             <div class='policy__header__title'>
                 <div class="title-sub">
