@@ -1,5 +1,4 @@
 import './bootstrap';
-import Swal from 'sweetalert2'
 
 const btnSubmit = $('#btn-submit')
 const contactForm = $('#contact-form')

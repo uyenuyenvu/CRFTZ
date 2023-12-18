@@ -1,4 +1,7 @@
 .policy {
+    @include sp {
+        padding: 0 3px;
+    }
     margin-top: 58px;
     &__header {
         flex-shrink: 0;
@@ -37,7 +40,6 @@
         .top--line {
             position: relative;
             display: flex;
-            margin: 0 5px;
             justify-content: space-between;
             
             .line {
@@ -79,10 +81,11 @@
     }
     }
     &__content {
-        padding: 0 10px;
+        
         margin-bottom: 120px;
         @include sp {
             margin-bottom: 84px;
+            padding: 0 2px; 
         }
         .item {
             display: flex;
