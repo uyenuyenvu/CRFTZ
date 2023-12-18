@@ -3,6 +3,7 @@ window.Popper = Popper
 
 import 'bootstrap'
 
+import $ from "jquery";
 
 window.$ = window.jQuery = $;
 /**
