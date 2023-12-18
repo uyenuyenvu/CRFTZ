@@ -1,5 +1,5 @@
 .support {
-    
+    margin-top: 58px;
     &__header {
         flex-shrink: 0;
         &__title {
@@ -213,7 +213,9 @@
         display: flex;
         margin: 0 8px;
         justify-content: space-evenly;
+        margin-bottom: 198px;
         @include sp {
+            margin-bottom: 130px;
             justify-content: space-around;
         }
         position: relative;

@@ -1,5 +1,5 @@
 .policy {
-    
+    margin-top: 58px;
     &__header {
         flex-shrink: 0;
         &__title {
@@ -80,6 +80,10 @@
     }
     &__content {
         padding: 0 10px;
+        margin-bottom: 120px;
+        @include sp {
+            margin-bottom: 84px;
+        }
         .item {
             display: flex;
             margin-bottom: 50px;
