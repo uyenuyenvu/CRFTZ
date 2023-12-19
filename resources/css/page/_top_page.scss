@@ -54,7 +54,7 @@
 
             &__text {
                 text-align: center;
-                font-family: $font-family-sans-serif-helvetica;
+                font-family: $font-family-sans-serif-helvetica-normal;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
@@ -142,7 +142,6 @@
             .who-we-are__content__text {
                 margin-top: 13px;
                 font-family: $font-family-sans-serif-source;
-                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
                 font-size: 21px;
                 font-style: normal;
                 font-weight: 400;
@@ -170,7 +169,7 @@
                     font-weight: 400;
                     line-height: normal;
                     color: white;
-                    font-family: $font-family-sans-serif-helvetica;
+                    font-family: $font-family-sans-serif-helvetica-normal;
 
                     @include sp {
                         font-size: 18px;
@@ -314,7 +313,7 @@
 
             &__text {
                 text-align: center;
-                font-family: $font-family-sans-serif-helvetica;
+                font-family: $font-family-sans-serif-helvetica-normal;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
@@ -428,7 +427,7 @@
                             color: #464041;
                             text-transform: uppercase;
                             text-align: right;
-                            font-family: $font-family-sans-serif-helvetica;
+                            font-family: $font-family-sans-serif-helvetica-normal;
                             font-size: 32px;
                             font-style: normal;
                             font-weight: 400;
@@ -586,7 +585,7 @@
 
             &__text {
                 text-align: center;
-                font-family: $font-family-sans-serif-helvetica;
+                font-family: $font-family-sans-serif-helvetica-normal;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
@@ -628,7 +627,7 @@
 
                 .btn-text {
                     color: var(--WHITE, #FFF);
-                    font-family: $font-family-sans-serif-source;
+                    font-family: auto;
                     font-size: 47px;
                     font-style: normal;
                     font-weight: 400;
@@ -756,8 +755,12 @@
         width: max-content;
 
         .title-slide {
+            font-family: 'Owners Wide';
             font-size: 190px;
+            font-weight: 600;
             line-height: 190px;
+            letter-spacing: 0em;
+            text-align: left;
             @include sp {
                 font-size: 65px;
                 line-height: 65px;

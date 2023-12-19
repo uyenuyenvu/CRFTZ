@@ -12,19 +12,19 @@
         </div>
         <div class="list-menu">
             <div class="item-menu-footer">
-                <a href="">HOME</a>
+                <a href="{{ route('top') }}">HOME</a>
             </div>
             <div class="item-menu-footer">
-                <a href="">DESIGN</a>
+                <a href="{{ route('design') }}">DESIGN</a>
             </div>
             <div class="item-menu-footer">
-                <a href="">COMPANY</a>
+                <a href="{{ route('company') }}">COMPANY</a>
             </div>
             <div class="item-menu-footer">
-                <a href="">SUPPORT</a>
+                <a href="{{ route('support') }}">SUPPORT</a>
             </div>
             <div class="item-menu-footer">
-                <a href="">CONTACT</a>
+                <a href="{{ route('contact') }}">CONTACT</a>
             </div>
         </div>
         <div class="menu-bottom">
@@ -44,7 +44,7 @@
                     <img src="{{ asset('images/Union.svg') }}" alt="">
                 </a>
                 <div class="space"></div>
-                <a href=""  class="item-menu-left-bottom">
+                <a href="{{ route('policy') }}"  class="item-menu-left-bottom">
                     <span>POLICY</span>
                 </a>
             </div>
