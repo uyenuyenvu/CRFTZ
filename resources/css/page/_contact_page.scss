@@ -1,8 +1,8 @@
 .contact {
+    margin-top: 58px;
     &__header {
         flex-shrink: 0;
         &__title {
-            padding: 0 10px;
             margin-bottom: 40px;
             display: flex;
             justify-content: space-between;
@@ -35,11 +35,11 @@
     }
     .top-line {
         display: flex;
-        margin: 187px 8px 150px;
+        margin: 187px 0 150px;
         justify-content: space-around;
         position: relative;
         @include sp {
-            margin: 40px 8px 70px;
+            margin: 40px 0px 70px;
         }
         .index {
             position: relative;
@@ -98,10 +98,10 @@
     .form-input {
         margin: 0 auto;
         width: 50%;
-        padding: 0 4px;
+        
         @include sp {
             width: 100%;
-            padding: 0 8px;
+            padding: 0 ;
         }
         .item {
             .item-title {

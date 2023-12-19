@@ -1,5 +1,8 @@
 .support {
-    
+    @include sp {
+        padding: 0 3px;
+    }
+    margin-top: 58px;
     &__header {
         flex-shrink: 0;
         &__title {
@@ -37,9 +40,8 @@
         .top--line {
             position: relative;
             display: flex;
-            margin: 0 5px;
             justify-content: space-between;
-            
+       
             .line {
                 position: absolute;
                 width: 100%;
@@ -79,7 +81,7 @@
     }
     &__content {
         display: flex;
-        padding: 0 10px;
+        
         margin-top: 70px;
         @include sp {
             flex-direction: column;
@@ -211,9 +213,11 @@
     }
     .bottom-line {
         display: flex;
-        margin: 0 8px;
         justify-content: space-evenly;
+        margin-bottom: 198px;
         @include sp {
+            margin: 0 2px;
+            margin-bottom: 130px;
             justify-content: space-around;
         }
         position: relative;
