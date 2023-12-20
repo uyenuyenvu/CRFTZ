@@ -23,11 +23,20 @@
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
     });
 
     var swiper2 = new Swiper('#mySwiper', {
         loop: true,
         centeredSlides : true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             640: {
                 spaceBetween: 20,

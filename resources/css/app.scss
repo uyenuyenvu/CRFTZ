@@ -38,7 +38,10 @@ body {
 
     height: 100%;
     position: relative;
-
+    margin-top: 134px;
+    @include sp {
+        margin-top: 110px;
+    }
     &::after {
         --c: #6b6768; /* color */
         --t: 1px; /* thickness */
