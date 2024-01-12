@@ -25,8 +25,10 @@ class ContactMailRequest extends FormRequest
             'name' => 'required|string|max:255',
             'email' => 'required|email',
             'phone' => 'required',
-            'subject' => 'required',
-            'content' => 'required|string',
+            'leader' => 'required',
+            'address' => 'required',
+            'type_require' => 'required',
+            'type_contact' => 'required',
         ];
     }
 
@@ -39,15 +41,17 @@ class ContactMailRequest extends FormRequest
     {
         return [
             'name.required' => '名前フィールドは必須です。',
+            'leader.required' => 'ご担当者名フィールドは必須です。',
+            'address.required' => '住所フィールドは必須です。',
+            'type_require.required' => 'お問い合わせ種別フィールドは必須です。',
+            'type_contact.required' => 'ご都合のよいご返信方法フィールドは必須です。',
             'name.string' => '名前フィールドは文字列である必要があります。',
             'name.max' => '名前フィールドは255文字以下である必要があります。',
-            'subject.string' => '件名フィールドは文字列である必要があります。',
             'email.required' => '電子メールフィールドは必須です。',
             'email.email' => '電子メールフィールドは有効なメールアドレスである必要があります。',
             'phone.required' => '電話番号フィールドは必須です。',
             'phone.numeric' => '電話番号フィールドは数値である必要があります。',
             'subject.required' => '件名フィールドは必須です。',
-            'content.required' => '内容フィールドは必須です。',
         ];
     }
 }

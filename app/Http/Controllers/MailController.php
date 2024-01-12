@@ -15,16 +15,18 @@ class MailController extends Controller
     {
         try {
             $emailTo = Config::get('constants.mail_to_address');
-
             Mail::to($emailTo)->send(new ContactMail(
                 name: $request->get('name'),
+                leader: $request->get('leader'),
                 email: $request->get('email'),
-                subjectCustom: $request->get('subject'),
                 phone: $request->get('phone'),
+                address: $request->get('address'),
+                type_require: $request->get('type_require'),
+                type_contact: $request->get('type_contact'),
                 content: $request->get('content'),
             ));
 
-            return redirect()->route('contact')
+            return redirect()->route('top')
                 ->with('notify', [
                     'type' => 'success',
                     'message' => 'お問い合わせを受け付けました。'

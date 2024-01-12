@@ -18,9 +18,12 @@ class ContactMail extends Mailable
      */
     public function __construct(
         private readonly string $name,
+        private readonly string $leader,
         private readonly string $email,
-        private readonly string $subjectCustom,
         private readonly string $phone,
+        private readonly string $address,
+        private readonly string $type_require,
+        private readonly string $type_contact,
         private readonly string $content,
     )
     {
@@ -33,7 +36,7 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: $this->subjectCustom,
+            subject: '採用ページからのお問い合わせ',
         );
     }
 
@@ -47,9 +50,12 @@ class ContactMail extends Mailable
             with: [
                 'name' => $this->name,
                 'email' => $this->email,
-                'subjectCustom' => $this->subjectCustom,
                 'phone' => $this->phone,
                 'content' => $this->content,
+                '$type_contact' => $this->type_contact,
+                '$type_require' => $this->type_require,
+                '$address' => $this->address,
+                '$leader' => $this->leader,
             ],
         );
     }
