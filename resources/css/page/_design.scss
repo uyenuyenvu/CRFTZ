@@ -1,0 +1,222 @@
+.title-design{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include sp{
+        margin-bottom: 40px;
+    }
+    .title-main{
+        color: white;
+        font-size: 190px;
+        line-height: 190px;
+        font-family: 'Owners Wide';
+        @include sp{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
+.mb-show{
+    display: none;
+    @include sp{
+        display: block;
+    }
+}
+.planet{
+    padding: 100px;
+    @include sp{
+        padding: 30px 0;
+    }
+    .title-planet{
+        font-size: 55px;
+        color: #EBBA3B;
+        line-height: 75px;
+        text-align: center;
+        @include sp{
+            font-size: 21px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+    }
+    .planet-chart{
+        width: 100%;
+        position: relative;
+        .bg-planet{
+            width: 100%;
+        }
+        .item-planet{
+            position: absolute;
+            width: 90.35%;
+            height: 90.76%;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            .layout-animation{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                //animation: layout-animation 43.32s infinite linear;
+                img{
+                    width: 15.868%;
+                    position: absolute;
+                    //animation: item-animation 43.32s infinite linear;
+
+                }
+                .image-1{
+                    left: 57%;
+                    top: 7%;
+                }
+                .image-2{
+                    top: 26%;
+                    left: 77%;
+                }
+                .image-3{
+                    top: 67%;
+                    left: 73%;
+                }
+                .image-4{
+                    top: 71.5%;
+                    left: 44.5%;
+                }
+                .image-5{
+                    top: 54%;
+                    left: 17%;
+                }
+                .image-6{
+                    top: 28%;
+                    left: 9%;
+                }
+                .image-7{
+                    top: 12%;
+                    left: 30.5%;
+                }
+            }
+
+        }
+
+    }
+}
+.small-text{
+    font-size: 16px;
+    color: #EBBA3B;
+    margin-top: 10px;
+    @include sp{
+        font-size: 11px;
+        margin-top: 0;
+    }
+}
+@keyframes layout-animation{
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) ;
+    }
+}
+@keyframes item-animation{
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg) ;
+    }
+}
+.design-desciption{
+    padding: 0 15% 200px 15%;
+    @include sp{
+        padding: 0 15% 50px 15%;
+    }
+    .title-description{
+        font-size: 55px;
+        line-height: 65px;
+        color: #EBBA3B;
+        margin-bottom: 20px;
+        @include sp{
+            font-size: 21px;
+            line-height: 31px;
+            font-weight: 500;
+        }
+    }
+    .content-description{
+        font-size: 21px;
+        line-height: 45px;
+        @include sp{
+            font-size: 16px;
+            line-height: 33px;
+        }
+    }
+}
+.style-block{
+    padding: 0 0 200px 0;
+    @include sp{
+        padding: 0 0 50px 0;
+    }
+    .title-style{
+        font-size: 90px;
+        line-height: 90px;
+        color: white;
+        font-family: 'Owners Wide';
+        @include sp{
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+}
+.designSlide{
+    .swiper {
+        width: 100%;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+        padding-left: 20px;
+        @include sp {
+            margin-bottom: 40px;
+            padding-left: 10px;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: max-content;
+
+        .title-slide {
+            font-size: 83px;
+            line-height: 83px;
+            font-family: 'Owners Wide';
+            @include sp {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+
+        .des-slide{
+            font-size: 16px;
+            margin-top: 15px;
+            @include sp {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+        img {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+            @include sp {
+                width: 350px;
+                height: 260px;
+                object-fit: cover;
+            }
+
+
+        }
+    }
+
+    .swiper-wrapper {
+        align-items: stretch;
+    }
+}
