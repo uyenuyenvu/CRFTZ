@@ -123,7 +123,7 @@
             <div class="members__images--list">
                 <div class="members__images--item">
                     <div class="members__images--item--thumbnail">
-                        <img class="thumb" src="{{asset('images/member1.jpg')}}" alt="member2">
+                        <img class="thumb" src="{{asset('images/member2.png')}}" alt="member2">
                         <div class="item-description" id="item-description-1">
                             <div class="text-des">
                                 <p>
@@ -136,6 +136,10 @@
                                 </p>
                             </div>
                         </div>
+                        <button class="item-btn" data-id="item-description-1">
+                            <img class="btn-minus" src="{{ asset('images/minus.svg') }}" alt="minus">
+                            <img class="btn-plus" src="{{ asset('images/plus.svg') }}" alt="plus">
+                        </button>
                     </div>
                     <div class="members__images--item--name">
                         Daiki Yamaguchi
@@ -156,6 +160,10 @@
                                 </p>
                             </div>
                         </div>
+                        <button class="item-btn" data-id="item-description-2">
+                            <img class="btn-minus" src="{{ asset('images/minus.svg') }}" alt="minus">
+                            <img class="btn-plus" src="{{ asset('images/plus.svg') }}" alt="plus">
+                        </button>
                     </div>
                     <div class="members__images--item--name">
                         Naoto Motoyama

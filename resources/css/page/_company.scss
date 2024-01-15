@@ -243,17 +243,13 @@
 
                     .item-description {
                         position: absolute;
-                        top: 0;
+                        top: 100%;
                         left: 0;
                         background-color: rgba(0, 0, 0, 0.6);
                         color: white;
                         height: 100%;
                         width: 100%;
-                        opacity: 0;
-                        transition: opacity .6s ease;
-                        &:hover{
-                            opacity: 1;
-                        }
+                        transition: 1s;
 
                         &.show {
                             display: block;
